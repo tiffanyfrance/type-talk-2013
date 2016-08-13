@@ -1,0 +1,257 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1138\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;\f2\fmodern\fcharset0 Courier;
+\f3\fnil\fcharset0 AndaleMono;\f4\fnil\fcharset0 Georgia;\f5\fnil\fcharset0 LucidaGrande;
+\f6\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red69\green69\blue69;\red255\green255\blue255;\red255\green247\blue222;
+\red83\green83\blue83;\red154\green154\blue154;\red0\green0\blue123;\red234\green234\blue234;\red109\green0\blue0;
+\red255\green247\blue222;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{none\}}{\leveltext\leveltemplateid1\'00;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 we know:\
+font-weight:300;\
+text-transform:uppercase;\
+line-height:;\
+\
+\
+Letter-spacing is tracking\
+\pard\pardeftab720\sl420
+
+\f1\fs28 \cf2 \cb3 Often confused with tracking is 
+\b \cf0 kerning
+\b0 \cf2 . Kerning refers to the adjustment of spacing between specific letterforms (not a whole group of characters), again, to improve readability.
+\f0\fs24 \cf0 \cb1 ;\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+word-spacing like letter-spacing for words\
+\
+kerning for specific letter form\
+kerning.js \
+proposed CSS for font-kerning\
+\
+\pard\pardeftab720\sl420
+
+\f2\fs28 \cf0 \cb3 text-rendering: optimizeLegibility; \
+not standard\
+enhances kerning on recognized char pairs\
+\
+Other kerning option (kern with care, usually kerning is built in)\
+\pard\pardeftab720\sl440
+
+\f3 \cf0 \cb4 <span class="kern">W</span>ashington\
+and <span class="kern">T</span>oronto\
+\
+.kern \{letter-spacing: -0.1em \}
+\f2\fs32 \
+\pard\pardeftab720\sl420
+
+\fs28 \cf0 \cb3 letter-spacing applies AFTER each letter\
+When to kern: headings with large text, numbers, italics, punctuations, sub\
+\
+proposed: 
+\f4\fs32 \cb4 The {\field{\*\fldinst{HYPERLINK "http://www.w3.org/TR/2003/CR-css3-text-20030514/#kerning-props"}}{\fldrslt \cf5 \kerning1\expnd4\expndtw20
+css3\kerning1\expnd0\expndtw0  Text Module}} may contain the 
+\f3\fs22 kerning-mode
+\f4\fs32  and 
+\f3\fs22 kerning-pair-threshold
+\f4\fs32 properties to aid control over kerning, although these properties have yet to be fully\'a0defined.
+\f2\fs28 \cb3 \
+\
+proposed font-variant-ligature for ligatures\
+\
+using ems to define font and line-height will ensure that the line-height is always relative to the font size\
+leading refers to the lead pieces which would go between each row of text on a printing press.\
+line-height is calculated by using "half-leading" applied to both the top and bottom of the characters (vertically center it's lines)\
+\
+Never apply line-height with px.\
+line-height can be a multiplier: 1.25. This doesn't need an em or %.\
+\
+text-align:justified can cause rivers/channels in body text, these cannot be spot fixed as with print due to fluid layouts of web\
+text-justify: 
+\f3\fs22 \cb4 inter-word
+\f4\fs32  or 
+\f3\fs22 inter-character
+\f2\fs28 \cb3 \
+\
+rivers can be avoided thusly\'85\'85\
+\
+hyphens, etc here\
+\
+Readability vs legibility\
+Readability refers to long paragraphs\
+legibility refers to individual letter forms\
+\
+bring in notes here about what makes a more readable typeface\
+\
+modulation/shoulder\
+\
+Instead of &nbsp; try:\
+\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sl440
+\ls1\ilvl0
+\f3 \cf0 \cb4 		&#8194;
+\f4\fs32  en space 
+\f5 \cb6 \uc0\u8194 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8195;
+\f4\fs32  em space 
+\f5 \cb6 \uc0\u8195 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8196;
+\f4\fs32  3-per-em space 
+\f5 \cb6 \uc0\u8196 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8197;
+\f4\fs32  4-per-em space 
+\f5 \cb6 \uc0\u8197 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8198;
+\f4\fs32  6-per-em space 
+\f5 \cb6 \uc0\u8198 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8199;
+\f4\fs32  figure space 
+\f5 \cb6 \uc0\u8199 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8200;
+\f4\fs32  punctuation space 
+\f5 \cb6 \uc0\u8200 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8201;
+\f4\fs32  thin space 
+\f5 \cb6 \uc0\u8201 
+\f4 \cb4 \
+\ls1\ilvl0
+\f3\fs28 		&#8202;
+\f4\fs32  hair space 
+\f5 \cb6 \uc0\u8202 
+\f4 \cb4 \
+\pard\pardeftab720\sl420
+
+\f2\fs28 \cf0 \cb3 \
+&nbsp; carries other meaning.\
+\
+(what does white-space:pre do?)\
+\
+Use acronym & Abbreviations tags: 
+\f3 \cb4 ABBR \{letter-spacing:0.1em\}
+\f2\fs32 \
+
+\fs28 \cb3 WordPress with content editors? Use jQuery to find sequence of 3 or 4 letters and wrap it in <abbr> tag. (or do this in php).\
+\
+\pard\pardeftab720\sl440
+
+\f3 \cf0 \cb4 $search = '/\\b([A-Z][A-Z0-9]\{2,\})\\b/';\
+$replace = '<abbr>$1</abbr>';\
+$text = preg_replace($search,$replace,$text);
+\f2\fs32 \
+\pard\pardeftab720\sl420
+
+\fs28 \cf0 \cb3 \
+jquery version: \
+
+\f6 \cf7 \cb8 var\cf0  replaced = original.replace(\cf9 /\\b([A-Z]+)\\b/\cf0 g, \cf9 '<acronym>$1</acronym>'\cf0 );\
+
+\f2 \cb3 \
+whats that thing people are using to hide their font? \
+\
+dashes\'85\
+\
+quotes & apostrophes\
+\
+importance of ems\
+\
+post script vs open type vs true type\
+\
+responsive design & type\
+\
+What's missing in CSS for type? Altering shapes of type or width of individual characters. For instance, wouldn't it be great to be able to create a Narrow version of your favorite text?\
+\
+Pages have rhythm created by blocks of text, headers, images, and any other elements on the page, separated by white space. To preserve this rhythm:\
+\
+after reset, add vertical space evenly:\
+\pard\pardeftab720\sl440
+
+\f3 \cf0 \cb4 p \{\
+font-size:16px;  \
+line-height: 1.5;\
+  margin-top: 1.5em;\
+  margin-bottom: 1.5em \}
+\f2\fs32 \
+\pard\pardeftab720\sl440
+
+\fs28 \cf0 \cb3 16 * 1.5 = 24px line height\
+\
+\pard\pardeftab720\sl420
+\cf0 Headings\
+The idea is to set each line equivalent to keep rhythm. So if the line-height is 24px on 16px font, let's figure out what the header line-height is when the header font size is 20px:\
+24/20 = 1.2\
+\
+\pard\pardeftab720\sl440
+
+\f3 \cf0 \cb10 h2 \{\
+font-size:20px;  \
+line-height: 1.2;\
+  margin-top: 1.2em;\
+  margin-bottom: 1.2em \}
+\f2 \cb3 \
+\pard\pardeftab720\sl420
+\cf0 \
+or some combination totaling m-top & m-bottom\
+\
+\pard\pardeftab720\sl440
+
+\f3 \cf0 \cb10 h2 \{\
+font-size:20px;  \
+line-height: 1.25;\
+  margin-top: 1.5em;\
+  margin-bottom: 1em \}\
+
+\f2 \cb3 \
+\pard\pardeftab720\sl420
+\cf0 on the opposite, footnotes or other small text should done as such\
+24/12 = 2\
+.footnote \{\
+font-size:12px;\
+line-height:2;\
+margin-top:2em;\
+margin-bottom:2em;\
+\}\
+\
+\
+You've heard of indenting - but have you heard of "outdenting"?\
+p \{text-indent:-1.5em;\}\
+Why would you outdent?\
+\
+did you know?\
+p:first-letter (can make a drop letter)\
+\pard\pardeftab720
+
+\fs24 \cf0 \cb1 p:first-letter \{\
+display:block;\
+float:left;\
+font-size: 80px;\
+color: #c9c9c9;\
+\}\
+\pard\pardeftab720\sl420
+
+\fs28 \cf0 \cb3 \
+\
+\
+\pard\pardeftab720\sl420
+
+\f0\fs24 \cf0 \cb1 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+\cf0 \
+\
+}
